@@ -1,1 +1,1 @@
-# Java-Script-Examples
+# JavaScript-Examples
