@@ -1,0 +1,31 @@
+<html>
+<head>
+   <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1 id="clock">00:00:00 </h1>
+  <p id="color"> #000000 </p>
+  <script src="script2_1.js"> </script>
+  
+  <p id="demo"> </p>
+  <script type="text/javascript">
+  var day;
+      var date = new Date();
+	  switch (date.getDay())
+	  {
+	   case 0: day = "Sunday"; break;
+	   case 1: day = "Monday"; break;
+	   case 2: day = "Tuesday"; break;
+	   case 3: day = "Wednesday"; break;
+	   case 4: day = "Thursday"; break;
+	   case 5: day = "Friday"; break;
+	   case 6: day = "Saturday"; break;
+	  	   
+	  }
+	  document.getElementById('demo').innerHTML = 
+	  "Today is " + day + "!";	 	  
+  </script>
+  
+  </div>
+</body>
+</html>

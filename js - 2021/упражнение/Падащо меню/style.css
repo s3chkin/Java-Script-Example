@@ -1,0 +1,17 @@
+#ddMenu
+{
+	width:500px;
+	height:50px;
+	background-color:lightgreen;
+	margin: 0 auto;
+	padding-left:10px;
+
+}
+#article
+{
+	width: 500px;
+	height: 150px;
+	background-color: #aaa;
+	margin: 0 auto;
+	padding-left:10px;
+}

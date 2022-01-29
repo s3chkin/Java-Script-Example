@@ -1,0 +1,22 @@
+<html>
+<head>
+</head>
+
+<body>
+  <p id="demo"> </p>
+  <script type ="text/javascript">
+  var fruit, text, flen, i;
+  fruit = ["Banana", "Orange", "Apple", "Kiwi"];
+  flen = fruit.length;
+  text="<ul>";
+  for(i = 0; i < flen; i++)
+  {
+  text+="<li>" + fruit[i] + " </li>";
+  }
+  text += "</ul>";
+  document.getElementById("demo").innerHTML = text;
+  
+  </script>
+</body>
+
+</html>

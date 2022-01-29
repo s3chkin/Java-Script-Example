@@ -1,0 +1,39 @@
+<html>
+ <title>Седмица</title>
+<head>
+</head>
+
+<body>
+  <p id="demo"> </p>
+  <script type="text/javascript" id="Curriculum">
+     var school, text, i, daysArray;
+     var daysArray = new Array ("Понеделник", "Вторник", "Сряда", "Четвъртък", "Петък",
+     "Събота", "Неделя" );
+	school = daysArray.length;
+	text="<ul>";
+	for(i = 1; i < school; i++)
+	  {
+	  text+="<li>" + daysArray[i] + " </li>";
+	  }
+	  text += "</ul>";
+  
+  var day;
+      var date = new Date();
+	  switch (date.getDay())
+	  {
+	   case 0: day = "Неделя"; break;
+	   case 1: day = "Понеделник"; break;
+	   case 2: day = "Вторник"; break;
+	   case 3: day = "Сряда"; break;
+	   case 4: day = "Четвъртък"; break;
+	   case 5: day = "Петък"; break;
+	   case 6: day = "Събота"; break;
+	  	   
+	  }
+	  document.getElementById('demo').innerHTML = text +
+	  "Днеска е " + day + "!" + " - " + date.getFullYear() + ". " + date.getMonth()+1 + ". " + date.getDate();	 
+
+</script>
+
+</body>
+</html>

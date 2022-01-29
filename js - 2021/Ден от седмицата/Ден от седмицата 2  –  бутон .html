@@ -1,0 +1,36 @@
+<html>
+<head>
+  <link rel="stylesheet" href="Day of the week.css">
+  <title>Ден от седмицата</title>
+</head>
+<body>
+  <p id="demo"> </p>
+  <script type="text/javascript" id="day">
+  var day;
+      var date = new Date();
+	  switch (date.getDay())
+	  {
+	   case 0: day = "Неделя"; break;
+	   case 1: day = "Понеделник"; break;
+	   case 2: day = "Вторник"; break;
+	   case 3: day = "Сряда"; break;
+	   case 4: day = "Четвъртък"; break;
+	   case 5: day = "Петък"; break;
+	   case 6: day = "Събота"; break;
+	  	   
+	  }  
+	  
+   document.getElementById('demo').innerHTML = 
+	  "Днеска сме  " + day + "!"; 
+      	  
+  </script>
+  
+  <div align="center">
+  <button class="button">
+  <a href="Ден от седмицата.html">
+  English </a>
+  </button>
+  </div>
+  
+</body>
+</html>

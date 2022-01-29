@@ -1,0 +1,24 @@
+<html>
+<head>
+<script type="text/javascript">
+  var count= 0; //дефиниране и зануляване на броячa
+  function Counter()
+  {
+    count++;
+	document.getElementById('demo').innerHTML= 
+	"This paragraph is checked " + count + " times"; 
+	if (count < 10)
+	  document.body.style.backgroundColor = "lightblue"; // за промяна на цвета
+	else if( count >= 10 && count < 20)
+	  document.body.style.backgroundColor = "orchid";
+    else if( count >= 20 && count < 30)
+	  document.body.style.backgroundColor = "purple";  
+	else 
+	  document.body.style.backgroundColor = "orange";
+  }
+</script>
+</head>
+<body>
+  <p id = "demo" onmouseover="Counter()"> This paragraph is checked 0 times </p>
+</body>
+</html>

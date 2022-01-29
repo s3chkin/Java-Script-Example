@@ -1,0 +1,47 @@
+<html>
+<head>
+<style>
+  #content
+  {
+    width:250px;
+	height:150;
+	background-color: lightblue;
+	border-radius: 10px;
+	margin: 0 auto;
+  }
+  #firstNumber
+  {
+    margin:15px;
+  }
+  #secondNumber
+  {
+    margin:15px;
+  }
+  #result
+  {
+    margin: 15px;
+	color: green;
+	font-size: 20px;
+  }
+</style>
+</head>
+
+<body>
+  <div id="content">
+    <input type = "text" id="firstNumber" value="" onchange="substract()">
+    <input type = "text" id="secondNumber" value="" onchange="substract()">
+	<div id="result"> </div>
+  </div>
+  <script>
+   function substract()
+   {
+     let firstN = Number(document.getElementById('firstNumber').value);
+     let secondN = Number(document.getElementById('secondNumber').value);
+     let resultN = firstN - secondN;
+	 document.getElementById('result').textContent = resultN;
+   } 
+   window.onload = substract();
+  </script>
+</body>
+
+</html>
