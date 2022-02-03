@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+
+    <h2>JavaScript Arrays - forEach()</h2>
+
+    <p id="demo"></p>
+
+    <script>
+        let langs = [
+            "JavaScript",
+            "C #",
+            "C++",
+            "HTML",
+            "CSS",
+            "NodeJS",
+            "VueJs",
+            "React"
+        ];
+
+        langs.forEach(function(par, index) {
+            index++;
+            document.getElementById("demo").innerHTML += index + ". " + par + "<br>";
+        });
+    </script>
+
+</body>
+
+</html>
