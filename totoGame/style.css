@@ -1,0 +1,21 @@
+*,
+body {
+    background-color: antiquewhite;
+}
+
+.button {
+    background-color: beige;
+    width: 100px;
+    height: 25px;
+    cursor: pointer;
+}
+
+#demo,
+#demo2,
+#demo3 {
+    font-size: 25px;
+    text-align: center;
+    background-color: aqua;
+    color: aliceblue;
+    width: 350px;
+}
