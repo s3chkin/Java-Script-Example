@@ -1,0 +1,39 @@
+body {
+    background-color: bisque;
+}
+
+.image {
+    width: 50px;
+    border-radius: 15px;
+    /* padding-left: 10px; */
+    padding-top: 5px;
+}
+
+.zuckerbergMsg {
+    float: left;
+    width: 180px;
+    border-style: groove;
+    border-color: azure;
+    padding-left: 10px;
+    background-color: beige;
+}
+
+.btn {
+    width: auto;
+    height: 40px;
+    border-radius: 10px;
+    background-color: rgb(241, 225, 152);
+    font-size: 20px;
+    cursor: pointer;
+}
+
+#myMsg2,
+#myMsg3,
+#myMsg4 {
+    display: none;
+}
+
+.msgWindow2 {
+    width: 500px;
+    background-color: aliceblue;
+}
