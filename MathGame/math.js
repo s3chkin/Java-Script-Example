@@ -9,7 +9,7 @@ var result = num1 + num2;
 
 let guess = document.getElementById('txtArea').value;
 guess = Number(guess);
-document.getElementById("demo4").innerHTML = guess;
+// document.getElementById("demo4").innerHTML = guess;
 
 
 function Check() {
