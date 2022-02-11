@@ -7,7 +7,7 @@
     background-color: antiquewhite;
     border-style: groove;
     border-width: 3px;
-    border-color: aquamarine;
+    border-color: rgb(255, 177, 8);
     width: 150px;
     height: 150px;
     float: left;
@@ -20,7 +20,7 @@
     background-color: antiquewhite;
     border-style: groove;
     border-width: 3px;
-    border-color: aquamarine;
+    border-color: rgb(255, 177, 8);
     width: 150px;
     height: 150px;
     float: right;
@@ -48,7 +48,7 @@
     background-color: antiquewhite;
     border-style: groove;
     border-width: 3px;
-    border-color: aquamarine;
+    border-color: rgb(255, 177, 8);
     font-size: 100px;
     text-align: center;
     float: left;
