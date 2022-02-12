@@ -62,14 +62,18 @@
 }
 
 #demo4 {
-    background-color: rgb(171, 171, 250);
-    width: auto;
+    background-color: rgb(235 239 233);
+    width: 450px;
     height: 80px;
     color: aliceblue;
     text-align: center;
     font-size: 45px;
     display: grid;
     place-items: center;
+    border-radius: 10px;
+    border-color: aquamarine;
+    border-style: groove;
+    border-width: 3px;
 }
 
 .timer {

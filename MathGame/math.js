@@ -4,12 +4,8 @@ document.getElementById("num1").innerHTML = parseInt(num1);
 document.getElementById("num2").innerHTML = parseInt(num2);
 var result = num1 + num2;
 
-
-// document.getElementById("demo5").innerHTML = result;
-
 let guess = document.getElementById('txtArea').value;
 guess = Number(guess);
-// document.getElementById("demo4").innerHTML = guess;
 
 var start = Date.now();
 setInterval(function() {
@@ -18,41 +14,33 @@ setInterval(function() {
     output(new Date().toUTCString());
 }, 1000);
 
-// if (guess === result) {
 
-//     var scor = 0;
-//     scor++;
-//     document.getElementById("demo4").innerHTML = ` Scor: ${scor++}`;
+const startingMinutes = 1;
+let time = startingMinutes * 60;
 
-// }
+const countdownEl = document.querySelector("#countdown");
 
+setInterval(updatecountdown, 1000);
 
-// const startingMinutes = 1;
-// let time = startingMinutes * 60;
+function updatecountdown() {
+    const minutes = Math.floor(time / 60);
+    let seconds = time % 60;
 
-// const countdownEl = document.querySelector("#countdown");
+    seconds = seconds < 10 ? "0" + seconds : seconds;
 
-// setInterval(updatecountdown, 1000);
+    countdownEl.innerHTML = `${minutes}:${seconds}`;
+    time--;
 
-// function updatecountdown() {
-//     const minutes = Math.floor(time / 60);
-//     let seconds = time % 60;
+    let EndGame = 60000;
 
-//     seconds = seconds < 10 ? "0" + seconds : seconds;
+    setTimeout(function() {
+        alert(`You Winn! Your score is ${score2}`);
+        setTimeout(function() {
+            window.location.reload();
+        }, 100);
+    }, 1000);
 
-//     countdownEl.innerHTML = `${minutes}:${seconds}`;
-//     time--;
-
-//     if (time === 0) {
-//         clearInterval(time);
-//         clearTimeout(time);
-
-//     } else {
-//         clearInterval(time);
-//         clearTimeout(time);
-
-//     }
-// }
+}
 
 var button = $('.increment-btn');
 var counter = $('.counter');
@@ -69,59 +57,45 @@ document.getElementById("demo4").innerHTML = score2;
 function Check() {
     let guess = document.getElementById("txtArea").value;
     guess = Number(guess);
-    if (guess === result) {
-
-        var button = $('.increment-btn');
-        var counter = $('.counter');
-        counter.val(parseInt(counter.val()) + 1);
-        counter++;
-        if (counter === 5) {
-            alert("You Win!");
-
-            setTimeout(function() {
-                window.location.reload();
-
-            }, 300);
-        }
-
-
-
-
-        // var score = 0;
-        // score++;
-        // var score2 = document.getElementById("demo4").innerHTML = ` Score: ${score++}`;
+    if (guess == result) {
 
         document.getElementById("txtArea").style.border = "thick solid lightgreen";
-        var num1 = parseInt(Math.floor(Math.random() * 20));
-        var num2 = parseInt(Math.floor(Math.random() * 20));
+        guess = document.getElementById('txtArea').value;
+        guess = Number(guess);
+
+
+        num1 = parseInt(Math.floor(Math.random() * 20));
+        num2 = parseInt(Math.floor(Math.random() * 20));
+        result = num1 + num2;
         document.getElementById("num1").innerHTML = parseInt(num1);
         document.getElementById("num2").innerHTML = parseInt(num2);
-        var millisecondsToWait = 500;
-        guess = null;
+        document.getElementById("txtArea").value = null;
+
+
         setTimeout(function() {
-            // result === 0;
-            // window.location.reload();
-            guess.location.reload();
-            guess = null;
-        }, millisecondsToWait);
+            document.getElementById("txtArea").style.border = null;
+
+        }, 250);
 
 
 
-    } else if (guess !== result) {
+        var button = $('.increment-btn');
+        counter = $('.counter');
+        counter.val(parseInt(counter.val()) + 1);
+        counter++;
+
+
+    } else if (guess != result) {
         document.getElementById("txtArea").style.border = "thick solid red";
         // var num1 = parseInt(Math.floor(Math.random() * 20));
         // var num2 = parseInt(Math.floor(Math.random() * 20));
         // document.getElementById("num1").innerHTML = parseInt(num1);
         // document.getElementById("num2").innerHTML = parseInt(num2);
 
-        alert("Wrong answer!");
+        alert(`Wrong answer! The correct answer was ${result}`);
         setTimeout(function() {
-            // document.getElementById("txtArea").innerHTML = num1 + num2;
             window.location.reload();
-            // alert('Sorry. Incorrect. The correct answer was ' + result + '.')
-
         }, 300);
     }
 
 }
-//document.getElementById("demo4").innerHTML = score2;
