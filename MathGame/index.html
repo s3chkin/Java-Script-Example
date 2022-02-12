@@ -15,12 +15,24 @@
     <p id="demo1"></p>
     <p id="demo2"></p>
     <p id="demo3"></p>
-    <p id="demo4"></p>
+    <p id="demo4" onclick="Check()"><input onclick="Check()" type="number" value="0" class="counter" style="border:none; 
+        background-color:rgb(171, 171, 250); font-size: 45px; display: grid; place-items: center;
+        width: 60px; text-align: center;" /></p>
+
+    <!-- <div class="timer" id="countdown">1:00</div> -->
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <!-- <input value="0" class="counter" /> -->
+    <button type="button" class="increment-btn" style="display: none;">Increment</button>
+
     <center>
         <div align="center" class="container">
-            <p id="num1" style="margin: 25px;">0</p>
+            <p id="num1" style="margin: 25px; display: grid;
+            place-items: center;">0</p>
             <p style="text-align: center; font-size: 75px; padding-bottom: -25px">+</p>
-            <p id="num2" style="margin: 25px;">0</p>
+            <p id="num2" style="margin: 25px; display: grid;
+            place-items: center;">0</p>
             <p style="text-align: center; font-size: 75px; padding-bottom: -25px">=</p>
             <p id="num3" style="margin: 25px;"> <input type="number" id="txtArea"> </p>
         </div>
