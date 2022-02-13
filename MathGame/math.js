@@ -98,15 +98,29 @@ function Check() {
 
     } else if (guess != result) {
         document.getElementById("txtArea").style.border = "thick solid red";
-        // var num1 = parseInt(Math.floor(Math.random() * 20));
-        // var num2 = parseInt(Math.floor(Math.random() * 20));
-        // document.getElementById("num1").innerHTML = parseInt(num1);
-        // document.getElementById("num2").innerHTML = parseInt(num2);
 
-        alert(`Wrong answer! The correct answer was ${result}`);
+        guess = document.getElementById('txtArea').value;
+        guess = Number(guess);
+
+
+        num1 = parseInt(Math.floor(Math.random() * 20));
+        num2 = parseInt(Math.floor(Math.random() * 20));
+        result = num1 + num2;
+        document.getElementById("num1").innerHTML = parseInt(num1);
+        document.getElementById("num2").innerHTML = parseInt(num2);
+        document.getElementById("txtArea").value = null;
+
+        var button = $('.increment-btn');
+        counter = $('.counter');
+        counter.val(parseInt(counter.val()) - 2);
+        counter--;
+
+        // alert(`Wrong answer! The correct answer was ${result}`);
+
         setTimeout(function() {
-            window.location.reload();
-        }, 300);
+            document.getElementById("txtArea").style.border = null;
+
+        }, 250);
     }
 
 }
