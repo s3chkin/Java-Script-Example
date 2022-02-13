@@ -74,15 +74,21 @@
     border-color: aquamarine;
     border-style: groove;
     border-width: 3px;
+    /* padding-left: 15px; */
 }
 
 .timer {
-    width: 100px;
-    height: 100px;
+    width: 250px;
+    height: 80px;
     background-color: rgb(121, 120, 118);
-    border-radius: 10px;
     color: aliceblue;
-    font-size: 20px;
+    font-size: 45px;
     place-items: center;
     display: grid;
+    border-radius: 10px;
+    border-color: aquamarine;
+    border-style: groove;
+    border-width: 3px;
+    float: center;
+    padding-top: 0px;
 }

@@ -34,20 +34,31 @@ function updatecountdown() {
     let EndGame = 60000;
 
     setTimeout(function() {
-        alert(`You Winn! Your score is ${score2}`);
+
         setTimeout(function() {
+            // window.location.reload();
+
+
             window.location.reload();
-        }, 100);
-    }, 1000);
+        }, )
+        let msg = alert(`You Winn!`);
+        let msg2 = msg.repeat(0);
+        document.write(msg2);
+    }, EndGame);
+    // setTimeout(function() {
+    //     // setTimeout(function() {
+    //     //     window.location.reload();
+    //     // }, 100);
+
+    //     // alert(`You Winn! Your score is ${score2}`);
+
+    //     window.location.reload();
+
+    // }, 5000);
 
 }
 
-var button = $('.increment-btn');
-var counter = $('.counter');
 
-button.click(function() {
-    counter.val(parseInt(counter.val()) + 1);
-});
 
 
 
