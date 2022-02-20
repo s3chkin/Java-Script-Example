@@ -22,13 +22,59 @@
             <div class="card">
                 <h3>Пресмятане на оценка</h3>
 
-                <button type="button" class="btn" onclick="btn1()">Текуща</button>
-                <button type="button" class="btn" onclick="btn2()">Годишна</button>
+                <div id="buttons" class="justify-content-center">
+                    <div class="row3">
+                        <button type="button" class="btn" onclick="openTab('btn1');">Текуща</button>
+                        <button type="button" class="btn" onclick="openTab('btn2');">Годишна</button>
+                    </div>
+                </div>
+
+                <!-- текуща -->
+                <div id="btn1" class="containerTab" style="display:none;">
+                    <div class="row2 ">
+                        <div class="column2 ">
+                            <div class="card2 ">
+                                <h5>Произволен</h5>
+
+                            </div>
+                        </div>
+
+                        <div class="column2 ">
+                            <div class="card2 ">
+                                <h5>Добави предмет</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <div id="btn2" class="containerTab" style="display:none;">
+                    <div class="row2 ">
+                        <div class="column2 ">
+                            <div class="card2 ">
+                                <h5>Произволен</h5>
+
+                            </div>
+                        </div>
+
+                        <div class="column2 ">
+                            <div class="card2 ">
+                                <h5>Добави предмет</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- годишна
+                <div class="year ">
+                    <h5>За</h5>
+                </div> -->
             </div>
         </div>
 
     </div>
 </body>
-<script src="app.js"></script>
+<script src="app.js "></script>
 
 </html>

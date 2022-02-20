@@ -7,7 +7,6 @@ body {
 }
 
 .column {
-    float: left;
     width: 65%;
     padding: 0 10px;
 }
@@ -29,6 +28,9 @@ body {
         display: block;
         margin-bottom: 20px;
     }
+    #buttons {
+        float: center;
+    }
 }
 
 .card {
@@ -39,13 +41,68 @@ body {
     height: 500px;
 }
 
-.btn {
-    display: flex;
+#buttons {
     float: left;
+    display: flex;
+    margin-top: 200px;
+}
+
+.btn {
     width: 120px;
     height: 40px;
     background-color: #13a0af;
-    margin: 10px;
     color: #f1f1f1;
     text-align: center;
+    margin: 5px;
+}
+
+
+/* cards 2 */
+
+.column2 {
+    float: left;
+    width: 20%;
+    padding: 0 10px;
+}
+
+.row2 {
+    margin: 0 -5px;
+}
+
+.row2:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.row2:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+@media screen and (max-width: 600px) {
+    .column2 {
+        width: 100%;
+        display: block;
+        margin-bottom: 20px;
+    }
+}
+
+.card2 {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    padding: 16px;
+    text-align: center;
+    background-color: #f1f1f1;
+    margin-top: 4px;
+}
+
+.row2 {
+    display: none;
+}
+
+.row3:after {
+    content: "";
+    display: table;
+    clear: both;
 }
