@@ -1,9 +1,11 @@
 * {
     box-sizing: border-box;
+    transition: ease-in-out 0.3;
 }
 
 body {
     font-family: Arial, Helvetica, sans-serif;
+    width: 100%;
 }
 
 .column {
@@ -44,7 +46,7 @@ body {
 #buttons {
     float: left;
     display: flex;
-    margin-top: 200px;
+    margin-top: 100px;
 }
 
 .btn {
@@ -95,14 +97,17 @@ body {
     text-align: center;
     background-color: #f1f1f1;
     margin-top: 4px;
+    color: #13a0af;
 }
 
-.row2 {
-    display: none;
+.card2:hover {
+    transition: ease-in-out 0.3;
+    background-color: #e6e5e5;
 }
 
-.row3:after {
+
+/* .row3:after {
     content: "";
     display: table;
     clear: both;
-}
+} */

@@ -6,3 +6,12 @@ function openTab(tabName) {
     }
     document.getElementById(tabName).style.display = "block";
 }
+
+function yearCountEvaluation() {
+    prompt("Брой оценки: ");
+}
+
+function lesson() {
+    let lesson2 = prompt("Име на предмет: ");
+    document.getElementById("result1").innerHTML = lesson2;
+}
