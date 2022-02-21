@@ -12,6 +12,6 @@ function yearCountEvaluation() {
 }
 
 function lesson() {
-    let lesson2 = prompt("Име на предмет: ");
-    document.getElementById("result1").innerHTML = lesson2;
+    // let lesson2 = prompt("Име на предмет: ");
+    document.getElementById("result1").innerHTML = prompt("Име на предмет: ");
 }
