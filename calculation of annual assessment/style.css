@@ -89,11 +89,12 @@ body {
     background-color: #e6e5e5;
 }
 
-#result2 {
+#result2,
+#resultWin {
     border-color: #13a0af;
     border-style: groove;
     height: 40px;
     width: 150px;
     padding-top: 3px;
-    margin-top: 80px;
+    margin-top: 40px;
 }
