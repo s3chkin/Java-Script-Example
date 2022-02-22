@@ -8,8 +8,9 @@
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <link rel="icon" href="https://upload.wikimedia.org/wikipedia/commons/thumb/3/35/Calculator_Flat_Icon_Vector.svg/512px-Calculator_Flat_Icon_Vector.svg.png?20180301081706" type="image/icon type">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <title>Document</title>
+    <title>Калкулатор</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -17,50 +18,55 @@
 
 <body>
 
-    <div class="row justify-content-center">
-        <div class="column">
-            <div class="card">
-                <h3>Пресмятане на оценка</h3>
+    <center>
+        <div class="row justify-content-center">
+            <div class="column">
+                <div class="card">
+                    <h3>Пресмятане на оценка</h3>
 
-                <div id="buttons" class="justify-content-center">
-                    <div class="row3">
-                        <button type="button" class="btn" onclick="openTab('btn1');">Текуща</button>
-                        <button type="button" class="btn" onclick="openTab('btn2');">Годишна</button>
+                    <div id="buttons" class="justify-content-center">
+                        <div class="row3">
+                            <button type="button" class="btn" onclick="openTab('btn1');">Текуща</button>
+                            <button type="button" class="btn" onclick="openTab('btn2');">Годишна</button>
+                        </div>
                     </div>
-                </div>
-                <!--  -->
+                    <!--  -->
 
-                <!-- текуща -->
-                <div id="btn1" class="containerTab" style="display:none; margin-top: 15px; margin-bottom: 15px;">
-                    <div class="row2 ">
+                    <!-- текуща -->
+                    <div id="btn1" class="containerTab" style="display:none; margin-top: 15px;">
+                        <div class="row2 ">
+                            <div class="column2 ">
+                                <a type="button" style="text-decoration: none;">
+                                    <div class="card2 ">
+                                        <h5>Пресметни текуща оценка</h5>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                    <!-- годишна -->
+                    <div id="btn2" class="containerTab" style="display:none;">
                         <div class="column2 ">
-                            <a type="button" style="text-decoration: none;">
+                            <a type="button" style="text-decoration: none; margin-top: 15px; " onclick="yearCountEvaluation()">
                                 <div class="card2 ">
-                                    <h5>Пресметни текуща оценка</h5>
+                                    <h5>Пресметни годишна оценка</h5>
                                 </div>
                             </a>
                         </div>
                     </div>
+
+                    <center>
+                        <div id="result1" align="center"></div>
+                        <div id="result2" align="center"></div>
+                    </center>
                 </div>
-
-
-
-                <!-- годишна -->
-                <div id="btn2" class="containerTab" style="display:none;">
-                    <div class="column2 ">
-                        <a type="button" style="text-decoration: none; margin-top: 15px; margin-bottom: 15px;" onclick="yearCountEvaluation()">
-                            <div class="card2 ">
-                                <h5>Пресметни годишна оценка</h5>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-
-                <div id="result1"></div>
             </div>
-        </div>
 
-    </div>
+        </div>
+    </center>
 </body>
 <script src="app.js "></script>
 

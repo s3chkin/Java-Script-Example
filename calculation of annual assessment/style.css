@@ -6,6 +6,7 @@
 body {
     font-family: Arial, Helvetica, sans-serif;
     width: 100%;
+    background-color: #f1e6e6;
 }
 
 .column {
@@ -41,6 +42,7 @@ body {
     text-align: center;
     background-color: #9ee4c3;
     height: 500px;
+    width: 700px;
 }
 
 #buttons {
@@ -85,4 +87,13 @@ body {
 .card2:hover {
     transition: ease-in-out 0.3;
     background-color: #e6e5e5;
+}
+
+#result2 {
+    border-color: #13a0af;
+    border-style: groove;
+    height: 40px;
+    width: 150px;
+    padding-top: 3px;
+    margin-top: 80px;
 }
