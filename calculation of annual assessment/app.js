@@ -7,11 +7,13 @@ function openTab(tabName) {
     document.getElementById(tabName).style.display = "block";
 }
 
+let evaluation = 0.00;
+
 function yearCountEvaluation() {
     prompt("Брой оценки: ");
 }
 
 function lesson() {
-    // let lesson2 = prompt("Име на предмет: ");
-    document.getElementById("result1").innerHTML = prompt("Име на предмет: ");
+    let lesson2 = prompt("Име на предмет: ");
+    document.getElementById("result1").innerHTML = `Предмет: ${lesson2} - Оценка(${evaluation})`;
 }
