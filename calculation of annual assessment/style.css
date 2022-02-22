@@ -61,26 +61,8 @@ body {
 
 /* cards 2 */
 
-.column2 {
-    float: left;
-    width: 20%;
-    padding: 0 10px;
-}
-
 .row2 {
     margin: 0 -5px;
-}
-
-.row2:after {
-    content: "";
-    display: table;
-    clear: both;
-}
-
-.row2:after {
-    content: "";
-    display: table;
-    clear: both;
 }
 
 @media screen and (max-width: 600px) {
@@ -104,10 +86,3 @@ body {
     transition: ease-in-out 0.3;
     background-color: #e6e5e5;
 }
-
-
-/* .row3:after {
-    content: "";
-    display: table;
-    clear: both;
-} */
