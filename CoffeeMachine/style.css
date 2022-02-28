@@ -1,0 +1,41 @@
+.container {
+    width: 850px;
+    height: 600px;
+    background-color: rgba(177, 169, 169, 0.664);
+    /* display: flex; */
+}
+
+#btn {
+    display: flex;
+    width: 150px;
+    height: 50px;
+    /* float: left; */
+    font-size: 18px;
+    margin-left: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.coffee,
+.tea,
+.chocolate,
+.threeInOne {
+    display: grid;
+    place-items: center;
+    border-color: brown;
+    background-color: antiquewhite;
+}
+
+.myMoneys {
+    display: flex;
+    float: right;
+    margin: 0;
+    padding: 0;
+}
+
+.money {
+    font-size: 30px;
+    margin: 0;
+    padding: 0;
+    margin-top: 13px;
+}
