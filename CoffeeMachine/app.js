@@ -1,4 +1,4 @@
-let moneys = (Math.random() * 5).toFixed(2);
+let moneys = (Math.random() * 8).toFixed(2);
 if (moneys == 0) {
     alert("Not Money!");
 }
@@ -11,26 +11,97 @@ let sumCoffee = 0.00;
 let sumTea = 0.00;
 let sumChocolate = 0.00;
 let sumThreeInOne = 0.00;
-let sum = 0.00;
+let sum = moneys;
+
+if (moneys < 1.50) {
+    document.getElementById("btn3").disabled = true;
+    document.getElementById("btn3").style.cursor = "not-allowed";
+}
+if (moneys < 1.20) {
+    document.getElementById("btn2").disabled = true;
+    document.getElementById("btn2").style.cursor = "not-allowed";
+}
+if (moneys < 1.00) {
+    document.getElementById("btn4").disabled = true;
+    document.getElementById("btn4").style.cursor = "not-allowed";
+}
+if (moneys < coffee) {
+    // alert("Sorry Not Money!");
+    document.getElementById("btn1").disabled = true;
+    document.getElementById("btn1").style.cursor = "not-allowed";
+}
+if (moneys < coffee) {
+    // location.reload();
+    location.reload();
+}
 
 function CalculateCoffee() {
     sumCoffee = moneys - parseFloat(coffee);
     document.getElementById("money").innerHTML = `Moneys: ${sumCoffee.toFixed(2)}`;
-    moneys = sumCoffee;
+    // moneys = sumCoffee;
+    document.getElementById("btn").disabled = true;
+    document.getElementById("btn").style.cursor = "not-allowed";
+    sumCoffee = moneys;
+    if (sumCoffee <= 1.49) {
+        document.getElementById("btn3").disabled = true;
+    }
+
+    var img = new Image();
+    var div = document.getElementById('image');
+    img.onload = function() {
+        div.appendChild(img);
+    };
+    img.src = 'coffee.jpg';
+
 }
 
 function CalculateTea() {
+    sumCoffee = moneys;
+    // moneys = sumCoffee;
     sumCoffee = moneys - parseFloat(tea);
-    document.getElementById("money").innerHTML = `Moneys: ${sumCoffee}`;
 
+    document.getElementById("money").innerHTML = `Moneys: ${sumCoffee}`;
+    // moneys = moneys;
+    document.getElementById("btn2").disabled = true;
+    document.getElementById("btn2").style.cursor = "not-allowed";
+
+
+    var img = new Image();
+    var div = document.getElementById('image');
+    img.onload = function() {
+        div.appendChild(img);
+    };
+    img.src = 'tea.jpg';
 }
 
 function CalculateChocoate() {
+    sumCoffee = moneys;
+    // moneys = moneys - parseFloat(chocolate);
     sumCoffee = moneys - parseFloat(chocolate);
+
     document.getElementById("money").innerHTML = `Moneys: ${sumCoffee}`;
+    document.getElementById("btn3").disabled = true;
+    document.getElementById("btn3").style.cursor = "not-allowed";
+
+    var img = new Image();
+    var div = document.getElementById('image');
+    img.onload = function() {
+        div.appendChild(img);
+    };
+    img.src = 'chocolate.jpg';
 }
 
 function CalculateThreeInOne() {
+    // sumCoffee = moneys;
     sumCoffee = moneys - parseFloat(threeInOne);
     document.getElementById("money").innerHTML = `Moneys: ${sumCoffee}`;
+    document.getElementById("btn4").disabled = true;
+    document.getElementById("btn4").style.cursor = "not-allowed";
+
+    var img = new Image();
+    var div = document.getElementById('image');
+    img.onload = function() {
+        div.appendChild(img);
+    };
+    img.src = '3in1.jpg';
 }

@@ -1,11 +1,14 @@
 .container {
     width: 850px;
-    height: 600px;
+    height: 680px;
     background-color: rgba(177, 169, 169, 0.664);
     /* display: flex; */
 }
 
-#btn {
+#btn,
+#btn2,
+#btn3,
+#btn4 {
     display: flex;
     width: 150px;
     height: 50px;
@@ -38,4 +41,10 @@
     margin: 0;
     padding: 0;
     margin-top: 13px;
+}
+
+#image {
+    padding-top: 200px;
+    margin-left: 5px;
+    margin: 10px;
 }
