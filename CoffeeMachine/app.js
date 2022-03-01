@@ -26,25 +26,19 @@ if (moneys < 1.00) {
     document.getElementById("btn4").style.cursor = "not-allowed";
 }
 if (moneys < coffee) {
-    // alert("Sorry Not Money!");
     document.getElementById("btn1").disabled = true;
     document.getElementById("btn1").style.cursor = "not-allowed";
 }
 if (moneys < coffee) {
-    // location.reload();
     window.location.reload();
 }
 
 function CalculateCoffee() {
-    sumCoffee = moneys - parseFloat(coffee);
+    sumCoffee = moneys - parseFloat(0.70);
     document.getElementById("money").innerHTML = `Moneys: ${sumCoffee.toFixed(2)}`;
     // moneys = sumCoffee;
     document.getElementById("btn").disabled = true;
     document.getElementById("btn").style.cursor = "not-allowed";
-    sumCoffee = moneys;
-    if (sumCoffee <= 1.49) {
-        document.getElementById("btn3").disabled = true;
-    }
 
     var img = new Image();
     var div = document.getElementById('image');
@@ -53,20 +47,19 @@ function CalculateCoffee() {
     };
     img.src = 'coffee.jpg';
 
+
+    moneys = sumCoffee;
+    document.getElementById("money").innerHTML = `Moneys: ${moneys}`;
 }
 
 function CalculateTea() {
-    // sumCoffee = moneys;
+    // moneys = null;
     // moneys = sumCoffee;
 
-    sumCoffee = moneys - parseFloat(tea).toFixed(2);
-    // sumTea = moneys - parseFloat(tea).toFixed(2);
-
-    document.getElementById("money").innerHTML = `Moneys: ${sumCoffee.toFixed(2)}`;
-    // document.getElementById("money").innerHTML = `Moneys: ${sumTea-sumCoffee.toFixed(2)}`;
+    sumTea = moneys - parseFloat(1.20).toFixed(2);
+    document.getElementById("money").innerHTML = `Moneys: ${sumTea.toFixed(2)}`;
     document.getElementById("btn2").disabled = true;
     document.getElementById("btn2").style.cursor = "not-allowed";
-
 
     var img = new Image();
     var div = document.getElementById('image');
@@ -74,14 +67,15 @@ function CalculateTea() {
         div.appendChild(img);
     };
     img.src = 'tea.jpg';
+
+    moneys = sumTea;
+    document.getElementById("money").innerHTML = `Moneys: ${sumTea.toFixed(2)}`;
 }
 
 function CalculateChocoate() {
-    sumCoffee = moneys;
-    // moneys = moneys - parseFloat(chocolate);
-    sumCoffee = moneys - parseFloat(chocolate).toFixed(2);
+    sumChocolate = moneys - parseFloat(chocolate).toFixed(2);
 
-    document.getElementById("money").innerHTML = `Moneys: ${sumCoffee.toFixed(2)}`;
+    document.getElementById("money").innerHTML = `Moneys: ${sumChocolate.toFixed(2)}`;
     document.getElementById("btn3").disabled = true;
     document.getElementById("btn3").style.cursor = "not-allowed";
 
@@ -91,12 +85,14 @@ function CalculateChocoate() {
         div.appendChild(img);
     };
     img.src = 'chocolate.jpg';
+
+    moneys = sumChocolate;
+    document.getElementById("money").innerHTML = `Moneys: ${sumChocolate.toFixed(2)}`;
 }
 
 function CalculateThreeInOne() {
-    sumCoffee = moneys;
-    sumCoffee = moneys - parseFloat(threeInOne).toFixed(2);
-    document.getElementById("money").innerHTML = `Moneys: ${sumCoffee.toFixed(2)}`;
+    sumThreeInOne = moneys - parseFloat(threeInOne).toFixed(2);
+    document.getElementById("money").innerHTML = `Moneys: ${sumThreeInOne.toFixed(2)}`;
     document.getElementById("btn4").disabled = true;
     document.getElementById("btn4").style.cursor = "not-allowed";
 
@@ -106,4 +102,7 @@ function CalculateThreeInOne() {
         div.appendChild(img);
     };
     img.src = '3in1.jpg';
+
+    moneys = sumThreeInOne;
+    document.getElementById("money").innerHTML = `Moneys: ${sumThreeInOne.toFixed(2)}`;
 }
