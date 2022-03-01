@@ -32,7 +32,7 @@ if (moneys < coffee) {
 }
 if (moneys < coffee) {
     // location.reload();
-    location.reload();
+    window.location.reload();
 }
 
 function CalculateCoffee() {
@@ -56,12 +56,14 @@ function CalculateCoffee() {
 }
 
 function CalculateTea() {
-    sumCoffee = moneys;
+    // sumCoffee = moneys;
     // moneys = sumCoffee;
-    sumCoffee = moneys - parseFloat(tea);
 
-    document.getElementById("money").innerHTML = `Moneys: ${sumCoffee}`;
-    // moneys = moneys;
+    sumCoffee = moneys - parseFloat(tea).toFixed(2);
+    // sumTea = moneys - parseFloat(tea).toFixed(2);
+
+    document.getElementById("money").innerHTML = `Moneys: ${sumCoffee.toFixed(2)}`;
+    // document.getElementById("money").innerHTML = `Moneys: ${sumTea-sumCoffee.toFixed(2)}`;
     document.getElementById("btn2").disabled = true;
     document.getElementById("btn2").style.cursor = "not-allowed";
 
@@ -77,9 +79,9 @@ function CalculateTea() {
 function CalculateChocoate() {
     sumCoffee = moneys;
     // moneys = moneys - parseFloat(chocolate);
-    sumCoffee = moneys - parseFloat(chocolate);
+    sumCoffee = moneys - parseFloat(chocolate).toFixed(2);
 
-    document.getElementById("money").innerHTML = `Moneys: ${sumCoffee}`;
+    document.getElementById("money").innerHTML = `Moneys: ${sumCoffee.toFixed(2)}`;
     document.getElementById("btn3").disabled = true;
     document.getElementById("btn3").style.cursor = "not-allowed";
 
@@ -92,9 +94,9 @@ function CalculateChocoate() {
 }
 
 function CalculateThreeInOne() {
-    // sumCoffee = moneys;
-    sumCoffee = moneys - parseFloat(threeInOne);
-    document.getElementById("money").innerHTML = `Moneys: ${sumCoffee}`;
+    sumCoffee = moneys;
+    sumCoffee = moneys - parseFloat(threeInOne).toFixed(2);
+    document.getElementById("money").innerHTML = `Moneys: ${sumCoffee.toFixed(2)}`;
     document.getElementById("btn4").disabled = true;
     document.getElementById("btn4").style.cursor = "not-allowed";
 
