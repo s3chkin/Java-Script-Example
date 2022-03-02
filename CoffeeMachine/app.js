@@ -49,7 +49,7 @@ function CalculateCoffee() {
 
 
     moneys = sumCoffee;
-    document.getElementById("money").innerHTML = `Moneys: ${moneys}`;
+    document.getElementById("money").innerHTML = `Moneys: ${moneys.toFixed(2)}`;
 }
 
 function CalculateTea() {
