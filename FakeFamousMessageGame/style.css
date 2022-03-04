@@ -5,12 +5,13 @@ body {
 .image {
     width: 50px;
     border-radius: 15px;
-    /* padding-left: 10px; */
+    margin-left: 10px;
     padding-top: 5px;
 }
 
 .zuckerbergMsg {
-    float: left;
+    display: flex;
+    float: right;
     width: 180px;
     border-style: groove;
     border-color: azure;
@@ -31,6 +32,11 @@ body {
 #myMsg3,
 #myMsg4 {
     display: none;
+}
+
+#myMsg {
+    display: flex;
+    float: right;
 }
 
 .msgWindow2 {
