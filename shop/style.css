@@ -92,3 +92,11 @@ body {
     cursor: default;
     color: aliceblue;
 }
+
+#myProducts-z {
+    display: none;
+}
+
+#productsContainer2 {
+    display: none;
+}

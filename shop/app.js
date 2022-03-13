@@ -104,3 +104,18 @@ function sell3() {
     document.getElementById("prdct3").style.display = "none";
 
 }
+
+function productsForSell() {
+    document.getElementById("myProducts-z").style.display = "block"
+    document.getElementById("productsContainer").style.display = "none"
+    document.getElementById("productsContainer2").style.display = "block"
+    document.getElementById("productsForBuying").style.display = "none"
+}
+
+function productsForBuying() {
+    document.getElementById("myProducts-z").style.display = "none"
+    document.getElementById("productsContainer").style.display = "block"
+    document.getElementById("productsContainer2").style.display = "none"
+    document.getElementById("productsForBuying").style.display = "block"
+
+}
