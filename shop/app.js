@@ -10,67 +10,97 @@ let croissant = 0.97;
 let baklava = 13.97;
 let dessert = 3.80;
 
+// ============= \\
+
+let tv = 450.00;
+let radio = 100.20;
+let microfon = 25.00;
+
+
 let moneys2 = 0.00;
 
 
 document.getElementById("myMoneys").innerHTML = moneys + " лева";
 
-function sell() {
+function buy() {
     moneys2 = moneys - apple;
     moneys = moneys2;
     document.getElementById("myMoneys").innerHTML = `${moneys.toFixed(2)} лева`;
 }
 
-function sell2() {
+function buy2() {
     moneys2 = moneys - orange;
     moneys = moneys2;
     document.getElementById("myMoneys").innerHTML = `${moneys.toFixed(2)} лева`;
 }
 
-function sell3() {
+function buy3() {
     moneys2 = moneys - carrot;
     moneys = moneys2;
     document.getElementById("myMoneys").innerHTML = `${moneys.toFixed(2)} лева`;
 }
 
-function sell4() {
+function buy4() {
     moneys2 = moneys - egg;
     moneys = moneys2;
     document.getElementById("myMoneys").innerHTML = `${moneys.toFixed(2)} лева`;
 }
 
-function sell5() {
+function buy5() {
     moneys2 = moneys - oil;
     moneys = moneys2;
     document.getElementById("myMoneys").innerHTML = `${moneys.toFixed(2)} лева`;
 }
 
-function sell6() {
+function buy6() {
     moneys2 = moneys - wafer;
     moneys = moneys2;
     document.getElementById("myMoneys").innerHTML = `${moneys.toFixed(2)} лева`;
 }
 
-function sell7() {
+function buy7() {
     moneys2 = moneys - ruffles;
     moneys = moneys2;
     document.getElementById("myMoneys").innerHTML = `${moneys.toFixed(2)} лева`;
 }
 
-function sell8() {
+function buy8() {
     moneys2 = moneys - croissant;
     moneys = moneys2;
     document.getElementById("myMoneys").innerHTML = `${moneys.toFixed(2)} лева`;
 }
 
-function sell9() {
+function buy9() {
     moneys2 = moneys - baklava;
     moneys = moneys2;
     document.getElementById("myMoneys").innerHTML = `${moneys.toFixed(2)} лева`;
 }
 
-function sell10() {
+function buy10() {
     moneys2 = moneys - dessert;
     moneys = moneys2;
     document.getElementById("myMoneys").innerHTML = `${moneys.toFixed(2)} лева`;
+}
+
+function sell1() {
+    moneys2 = moneys + tv;
+    moneys = moneys2;
+    document.getElementById("myMoneys").innerHTML = `${moneys.toFixed(2)} лева`;
+    document.getElementById("prdct1").style.display = "none";
+}
+
+function sell2() {
+    moneys2 = moneys + radio;
+    moneys = moneys2;
+    document.getElementById("myMoneys").innerHTML = `${moneys.toFixed(2)} лева`;
+    document.getElementById("prdct2").style.display = "none";
+
+}
+
+function sell3() {
+    moneys2 = moneys + microfon;
+    moneys = moneys2;
+    document.getElementById("myMoneys").innerHTML = `${moneys.toFixed(2)} лева`;
+    document.getElementById("prdct3").style.display = "none";
+
 }
