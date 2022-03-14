@@ -31,8 +31,8 @@
         <div>
             <!-- <a href="myProducts.html"> -->
             <button id="productsContainer" class="productsContainer" onclick="productsForSell()">
-                    <h5>Мои продукти</h5>
-                </button>
+                <h5>Мои продукти</h5>
+            </button>
             </a>
         </div>
     </div>
@@ -49,46 +49,47 @@
 
     <div id="productsForBuying">
         <div class="d-flex justify-content-center">
-            <div class="product ">
+            <div class="product" id="product1">
                 <center>
                     <img src="https://posadi.bg/img/p/1/0/1/101-large_default.jpg" id="productImg">
                 </center>
 
                 <b>
-                <p class="productName">Ябълка</p>
-            </b>
+                    <p class="productName">Ябълка</p>
+                </b>
                 <b>
-                <p class="price"> 0,80 лева бр.</p>
-            </b>
+                    <p class="price"> 0,80 лева бр.</p>
+                </b>
 
                 <div id="buttons">
-                    <button class="btn" onclick="buy()">
-                    Купи
-                </button>
-
-                    <!-- <button class="btn">
-                Купи
-            </button> -->
-
+                    <button class="btn" id="btn1" onclick="buy()">
+                        Купи
+                    </button>
+                </div>
+                <div class="d-flex justify-content-center">
+                    <div class="productCountContainer">
+                        <p class="float-left">Общ брой: </p>
+                        <p class="float-left" id="productCount"> 6</p>
+                    </div>
                 </div>
             </div>
 
-            <div class="product">
+            <div class="product" id="product2">
                 <center>
                     <img src="https://www.fruit-correct.com/Uploads/Images/%D0%9F%D0%BB%D0%BE%D0%B4/202105150111%D0%9F%D0%9E%D0%A0%D0%A2%D0%9E%D0%9A%D0%90%D0%9B_jpeg.png" id="productImg">
                 </center>
 
                 <b>
-                <p class="productName">Портокал</p>
-            </b>
+                    <p class="productName">Портокал</p>
+                </b>
                 <b>
-                <p class="price"> 1,20 лева бр.</p>
-            </b>
+                    <p class="price"> 1,20 лева бр.</p>
+                </b>
 
                 <div id="buttons">
-                    <button class="btn" onclick="buy2()">
-                    Купи
-                </button>
+                    <button class="btn" id="btn2" onclick="buy2()">
+                        Купи
+                    </button>
                     <!-- 
                 <button class="btn" onclick="buy2()">
                     Купи
@@ -97,22 +98,22 @@
                 </div>
             </div>
 
-            <div class="product">
+            <div class="product" id="product3">
                 <center>
                     <img src="https://bulmag.org/files/products-v2/1/review/2a5d15dd68a2c23fdcc72cdbefdff7ad.png" id="productImg">
                 </center>
 
                 <b>
-                <p class="productName">Морков</p>
-            </b>
+                    <p class="productName">Морков</p>
+                </b>
                 <b>
-                <p class="price"> 0,55 лева бр.</p>
-            </b>
+                    <p class="price"> 0,55 лева бр.</p>
+                </b>
 
                 <div id="buttons">
-                    <button class="btn" onclick="buy3()">
-                    Купи
-                </button>
+                    <button class="btn" id="btn3" onclick="buy3()">
+                        Купи
+                    </button>
 
                     <!-- <button class="btn" onclick="buy3()">
                     Купи
@@ -121,22 +122,22 @@
                 </div>
             </div>
 
-            <div class="product">
+            <div class="product" id="product4">
                 <center>
                     <img src="http://sweetsilvia.com/image/cache/catalog/CatPics/profi11/eggs1-1000x1000.jpg" id="productImg">
                 </center>
 
                 <b>
-                <p class="productName">Яйце</p>
-            </b>
+                    <p class="productName">Яйце</p>
+                </b>
                 <b>
-                <p class="price">0,35 лева бр.</p>
-            </b>
+                    <p class="price">0,35 лева бр.</p>
+                </b>
 
                 <div id="buttons">
-                    <button class="btn" onclick="buy4()">
-                    Купи
-                </button>
+                    <button class="btn" id="btn4" onclick="buy4()">
+                        Купи
+                    </button>
 
                     <!-- <button class="btn" onclick="buy4()">
                     Купи
@@ -145,22 +146,22 @@
                 </div>
             </div>
 
-            <div class="product">
+            <div class="product" id="product5">
                 <center>
                     <img src="https://www.klasiko.bg/UserFiles/products/3CFE1DD4-30BA-CBA3-B64D-1DDFADAD67CF.jpg?q=100&w=1000" id="productImg">
                 </center>
 
                 <b>
-                <p class="productName">Олио</p>
-            </b>
+                    <p class="productName">Олио</p>
+                </b>
                 <b>
-                <p class="price"> 7,65 лева бр.</p>
-            </b>
+                    <p class="price"> 7,65 лева бр.</p>
+                </b>
 
                 <div id="buttons">
-                    <button class="btn" onclick="buy5()">
-                    Купи
-                </button>
+                    <button class="btn" id="btn5" onclick="buy5()">
+                        Купи
+                    </button>
 
                     <!-- <button class="btn" onclick="buy5()">
                     Купи
@@ -176,109 +177,109 @@
         </h2>
 
         <div class="d-flex justify-content-center">
-            <div class="product ">
+            <div class="product" id="product6">
                 <center>
                     <img src="https://m.ebag.bg/products/5775/images/0/800" id="productImg">
                 </center>
 
                 <b>
-                <p class="productName">Вафла: Морени</p>
-            </b>
+                    <p class="productName">Вафла: Морени</p>
+                </b>
                 <b>
-                <p class="price"> 0,49 лева бр.</p>
-            </b>
+                    <p class="price"> 0,49 лева бр.</p>
+                </b>
 
                 <div id="buttons">
-                    <button class="btn" onclick="buy6()">
-                    Купи
-                </button>
+                    <button class="btn" id="btn6" onclick="buy6()">
+                        Купи
+                    </button>
 
 
 
                 </div>
             </div>
 
-            <div class="product">
+            <div class="product" id="product7">
                 <center>
                     <img src="https://m.ebag.bg/products/images/63652/200" id="productImg">
                 </center>
 
                 <b>
-                <p class="productName">Чипс: Ruffles (ketchup)</p>
-            </b>
+                    <p class="productName">Чипс: Ruffles (ketchup)</p>
+                </b>
                 <b>
-                <p class="price"> 2,00 лева бр.</p>
-            </b>
+                    <p class="price"> 2,00 лева бр.</p>
+                </b>
 
                 <div id="buttons">
-                    <button class="btn" onclick="buy7()">
-                    Купи
-                </button>
+                    <button class="btn" id="btn7" onclick="buy7()">
+                        Купи
+                    </button>
 
 
 
                 </div>
             </div>
 
-            <div class="product">
+            <div class="product" id="product8">
                 <center>
                     <img src="https://www.earda.bg/wp-content/uploads/0001/01/%D0%9A%D0%A0%D0%9E%D0%90%D0%A1%D0%90%D0%9D-7-DAYS-%D0%A1%D0%9C%D0%90%D0%9A%D0%98-%D0%9A%D0%90%D0%9A%D0%90%D0%9E-80%D0%93%D0%A0.jpg" id="productImg">
                 </center>
 
                 <b>
-                <p class="productName">Кроасан</p>
-            </b>
+                    <p class="productName">Кроасан</p>
+                </b>
                 <b>
-                <p class="price">0,97 лева бр.</p>
-            </b>
+                    <p class="price">0,97 лева бр.</p>
+                </b>
 
                 <div id="buttons">
-                    <button class="btn" onclick="buy8()">
-                    Купи
-                </button>
+                    <button class="btn" id="btn8" onclick="buy8()">
+                        Купи
+                    </button>
 
 
 
                 </div>
             </div>
 
-            <div class="product">
+            <div class="product" id="product9">
                 <center>
                     <img src="https://non-stop.bg/image/cache/catalog/PRODUCT-with-code/7360-500x500.jpg" id="productImg">
                 </center>
 
                 <b>
-                <p class="productName">Баклава</p>
-            </b>
+                    <p class="productName">Баклава</p>
+                </b>
                 <b>
-                <p class="price">13,97 лева кутия</p>
-            </b>
+                    <p class="price">13,97 лева кутия</p>
+                </b>
 
                 <div id="buttons">
-                    <button class="btn" onclick="buy9()">
-                    Купи
-                </button>
+                    <button class="btn" id="btn9" onclick="buy9()">
+                        Купи
+                    </button>
 
 
                 </div>
             </div>
 
-            <div class="product">
+            <div class="product" id="product10">
                 <center>
                     <img src="https://s13emagst.akamaized.net/products/27120/27119570/images/res_cdc34d3fab045660bd4cdc18c643c4fe.jpg?width=450&height=450&hash=7680B684025E99687A0091088AA6FE1F" id="productImg">
                 </center>
 
                 <b>
-                <p class="productName">Ореховки</p>
-            </b>
+                    <p class="productName">Ореховки</p>
+                </b>
                 <b>
-                <p class="price">3,80 лева кутия</p>
-            </b>
+                    <p class="price">3,80 лева кутия</p>
+                </b>
 
                 <div id="buttons">
-                    <button class="btn" onclick="buy10()">
-                    Купи
-                </button>
+                    <button class="btn" id="btn10" onclick="buy10()">
+                        Купи
+                    </button>
 
 
                 </div>
@@ -316,16 +317,16 @@
                 </center>
 
                 <b>
-                <p class="productName">Телевизор</p>
-            </b>
+                    <p class="productName">Телевизор</p>
+                </b>
                 <b>
-                <p class="price"> 450,00 лева</p>
-            </b>
+                    <p class="price"> 18,00 лева</p>
+                </b>
 
                 <div id="buttons">
                     <button class="btn" onclick="sell1()">
-                    Продай
-                </button>
+                        Продай
+                    </button>
 
 
                 </div>
@@ -337,16 +338,16 @@
                 </center>
 
                 <b>
-                <p class="productName">Радио</p>
-            </b>
+                    <p class="productName">Радио</p>
+                </b>
                 <b>
-                <p class="price"> 100,20 лева</p>
-            </b>
+                    <p class="price">12,20 лева</p>
+                </b>
 
                 <div id="buttons">
                     <button class="btn" onclick="sell2()">
-                    Продай
-                </button>
+                        Продай
+                    </button>
 
 
 
@@ -359,16 +360,16 @@
                 </center>
 
                 <b>
-                <p class="productName">Микрофон</p>
-            </b>
+                    <p class="productName">Микрофон</p>
+                </b>
                 <b>
-                <p class="price"> 25,00 лева</p>
-            </b>
+                    <p class="price"> 5,00 лева</p>
+                </b>
 
                 <div id="buttons">
                     <button class="btn" onclick="sell3()">
-                    Продай
-                </button>
+                        Продай
+                    </button>
                 </div>
             </div>
 
