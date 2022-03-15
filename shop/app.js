@@ -34,6 +34,7 @@ let productCount10 = 4;
 document.getElementById("myMoneys").innerHTML = moneys + " лева";
 
 function buy() {
+    document.getElementById("celledProducts1").style.display = "block";
 
     document.getElementById("productCount").innerHTML = productCount1--;
     if (productCount1 == -2) {
@@ -91,6 +92,8 @@ function buy() {
 }
 
 function buy2() {
+    document.getElementById("celledProducts2").style.display = "block";
+
 
     document.getElementById("productCount2").innerHTML = productCount2--;
     if (productCount2 == -2) {
@@ -144,6 +147,7 @@ function buy2() {
 }
 
 function buy3() {
+    document.getElementById("celledProducts3").style.display = "block";
 
     document.getElementById("productCount3").innerHTML = productCount3--;
     if (productCount3 == -2) {
@@ -197,6 +201,7 @@ function buy3() {
 }
 
 function buy4() {
+    document.getElementById("celledProducts4").style.display = "block";
 
     document.getElementById("productCount4").innerHTML = productCount4--;
     if (productCount4 == -2) {
@@ -250,14 +255,7 @@ function buy4() {
 }
 
 function buy5() {
-    // document.getElementById("productCount5").innerHTML = productCount5--;
-    // if (productCount5 == -2) {
-    //     alert("Продуктите свършиха!");
-    //     document.getElementById("productCount5").innerHTML = "0";
-    //     document.getElementById("product5").style.opacity = "0.5";
-    //     document.getElementById("btn5").disabled = true;
-
-    // }
+    document.getElementById("celledProducts5").style.display = "block";
 
     moneys2 = moneys - oil;
     moneys = moneys2;
@@ -312,6 +310,9 @@ function buy5() {
 }
 
 function buy6() {
+
+    document.getElementById("celledProducts6").style.display = "block";
+
     document.getElementById("productCount6").innerHTML = productCount6--;
     if (productCount6 == -2) {
         alert("Продуктите свършиха!");
@@ -363,6 +364,8 @@ function buy6() {
 }
 
 function buy7() {
+    document.getElementById("celledProducts7").style.display = "block";
+
     document.getElementById("productCount7").innerHTML = productCount7--;
     if (productCount7 == -2) {
         alert("Продуктите свършиха!");
@@ -414,6 +417,8 @@ function buy7() {
 }
 
 function buy8() {
+    document.getElementById("celledProducts8").style.display = "block";
+
     document.getElementById("productCount8").innerHTML = productCount8--;
     if (productCount8 == -2) {
         alert("Продуктите свършиха!");
@@ -465,6 +470,9 @@ function buy8() {
 }
 
 function buy9() {
+
+    document.getElementById("celledProducts9").style.display = "block";
+
     document.getElementById("productCount9").innerHTML = productCount9--;
     if (productCount9 == -2) {
         alert("Продуктите свършиха!");
@@ -516,6 +524,9 @@ function buy9() {
 }
 
 function buy10() {
+
+    document.getElementById("celledProducts10").style.display = "block";
+
     document.getElementById("productCount10").innerHTML = productCount10--;
     if (productCount10 == -2) {
         alert("Продуктите свършиха!");

@@ -110,3 +110,19 @@ body {
 .productCountContainer {
     margin-top: 2px;
 }
+
+
+/* .celledProducts {} */
+
+#celledProducts1,
+#celledProducts2,
+#celledProducts3,
+#celledProducts4,
+#celledProducts5,
+#celledProducts6,
+#celledProducts7,
+#celledProducts8,
+#celledProducts9,
+#celledProducts10 {
+    display: none;
+}
