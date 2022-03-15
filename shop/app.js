@@ -19,16 +19,29 @@ let microfon = 5.00;
 
 let moneys2 = 0.00;
 
-let productCount = 5;
+let productCount1 = 4;
+let productCount2 = 4;
+let productCount3 = 4;
+let productCount4 = 4;
+let productCount5 = 4;
+let productCount6 = 4;
+let productCount7 = 4;
+let productCount8 = 4;
+let productCount9 = 4;
+let productCount10 = 4;
 
 
 document.getElementById("myMoneys").innerHTML = moneys + " лева";
 
 function buy() {
 
-    document.getElementById("productCount").innerHTML = productCount--;
-    if (productCount == 0) {
-        alert("sfdsf");
+    document.getElementById("productCount").innerHTML = productCount1--;
+    if (productCount1 == -2) {
+        alert("Продуктите свършиха!");
+        document.getElementById("productCount").innerHTML = "0";
+        document.getElementById("product1").style.opacity = "0.5";
+        document.getElementById("btn1").disabled = true;
+
     }
 
     moneys2 = moneys - apple;
@@ -78,6 +91,16 @@ function buy() {
 }
 
 function buy2() {
+
+    document.getElementById("productCount2").innerHTML = productCount2--;
+    if (productCount2 == -2) {
+        alert("Продуктите свършиха!");
+        document.getElementById("productCount2").innerHTML = "0";
+        document.getElementById("product2").style.opacity = "0.5";
+        document.getElementById("btn2").disabled = true;
+
+    }
+
     moneys2 = moneys - orange;
     moneys = moneys2;
     document.getElementById("myMoneys").innerHTML = `${moneys.toFixed(2)} лева`;
@@ -121,6 +144,16 @@ function buy2() {
 }
 
 function buy3() {
+
+    document.getElementById("productCount3").innerHTML = productCount3--;
+    if (productCount3 == -2) {
+        alert("Продуктите свършиха!");
+        document.getElementById("productCount3").innerHTML = "0";
+        document.getElementById("product3").style.opacity = "0.5";
+        document.getElementById("btn3").disabled = true;
+
+    }
+
     moneys2 = moneys - carrot;
     moneys = moneys2;
     document.getElementById("myMoneys").innerHTML = `${moneys.toFixed(2)} лева`;
@@ -164,6 +197,16 @@ function buy3() {
 }
 
 function buy4() {
+
+    document.getElementById("productCount4").innerHTML = productCount4--;
+    if (productCount4 == -2) {
+        alert("Продуктите свършиха!");
+        document.getElementById("productCount4").innerHTML = "0";
+        document.getElementById("product4").style.opacity = "0.5";
+        document.getElementById("btn4").disabled = true;
+
+    }
+
     moneys2 = moneys - egg;
     moneys = moneys2;
     document.getElementById("myMoneys").innerHTML = `${moneys.toFixed(2)} лева`;
@@ -207,9 +250,19 @@ function buy4() {
 }
 
 function buy5() {
+    // document.getElementById("productCount5").innerHTML = productCount5--;
+    // if (productCount5 == -2) {
+    //     alert("Продуктите свършиха!");
+    //     document.getElementById("productCount5").innerHTML = "0";
+    //     document.getElementById("product5").style.opacity = "0.5";
+    //     document.getElementById("btn5").disabled = true;
+
+    // }
+
     moneys2 = moneys - oil;
     moneys = moneys2;
     document.getElementById("myMoneys").innerHTML = `${moneys.toFixed(2)} лева`;
+
     if (moneys <= 0) {
         alert("Парите свършиха! Продайте нещо!");
         document.getElementById("myMoneys").innerHTML = `0 лева`;
@@ -247,9 +300,27 @@ function buy5() {
         document.getElementById("product9").style.opacity = "0.5";
         document.getElementById("btn9").disabled = true;
     }
+
+    document.getElementById("productCount5").innerHTML = productCount5--;
+    if (productCount5 == -2) {
+        alert("Продуктите свършиха!");
+        document.getElementById("productCount5").innerHTML = "0";
+        document.getElementById("product5").style.opacity = "0.5";
+        document.getElementById("btn5").disabled = true;
+
+    }
 }
 
 function buy6() {
+    document.getElementById("productCount6").innerHTML = productCount6--;
+    if (productCount6 == -2) {
+        alert("Продуктите свършиха!");
+        document.getElementById("productCount6").innerHTML = "0";
+        document.getElementById("product6").style.opacity = "0.5";
+        document.getElementById("btn6").disabled = true;
+
+    }
+
     moneys2 = moneys - wafer;
     moneys = moneys2;
     document.getElementById("myMoneys").innerHTML = `${moneys.toFixed(2)} лева`;
@@ -292,6 +363,15 @@ function buy6() {
 }
 
 function buy7() {
+    document.getElementById("productCount7").innerHTML = productCount7--;
+    if (productCount7 == -2) {
+        alert("Продуктите свършиха!");
+        document.getElementById("productCount7").innerHTML = "0";
+        document.getElementById("product7").style.opacity = "0.5";
+        document.getElementById("btn7").disabled = true;
+
+    }
+
     moneys2 = moneys - ruffles;
     moneys = moneys2;
     document.getElementById("myMoneys").innerHTML = `${moneys.toFixed(2)} лева`;
@@ -334,6 +414,15 @@ function buy7() {
 }
 
 function buy8() {
+    document.getElementById("productCount8").innerHTML = productCount8--;
+    if (productCount8 == -2) {
+        alert("Продуктите свършиха!");
+        document.getElementById("productCount8").innerHTML = "0";
+        document.getElementById("product8").style.opacity = "0.5";
+        document.getElementById("btn8").disabled = true;
+
+    }
+
     moneys2 = moneys - croissant;
     moneys = moneys2;
     document.getElementById("myMoneys").innerHTML = `${moneys.toFixed(2)} лева`;
@@ -376,6 +465,15 @@ function buy8() {
 }
 
 function buy9() {
+    document.getElementById("productCount9").innerHTML = productCount9--;
+    if (productCount9 == -2) {
+        alert("Продуктите свършиха!");
+        document.getElementById("productCount9").innerHTML = "0";
+        document.getElementById("product9").style.opacity = "0.5";
+        document.getElementById("btn9").disabled = true;
+
+    }
+
     moneys2 = moneys - baklava;
     moneys = moneys2;
     document.getElementById("myMoneys").innerHTML = `${moneys.toFixed(2)} лева`;
@@ -418,6 +516,15 @@ function buy9() {
 }
 
 function buy10() {
+    document.getElementById("productCount10").innerHTML = productCount10--;
+    if (productCount10 == -2) {
+        alert("Продуктите свършиха!");
+        document.getElementById("productCount10").innerHTML = "0";
+        document.getElementById("product10").style.opacity = "0.5";
+        document.getElementById("btn10").disabled = true;
+
+    }
+
     moneys2 = moneys - dessert;
     moneys = moneys2;
     document.getElementById("myMoneys").innerHTML = `${moneys.toFixed(2)} лева`;
