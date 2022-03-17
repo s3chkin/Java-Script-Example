@@ -67,14 +67,15 @@
         <div id="time">
             <p>Въведете рожденната си дата:</p>
 
-            <input id="days" type="text" id="firstNumber" value="" placeholder="DD" onchange="substract()">
-            <input id="months" type="text" id="firstNumber" value="" placeholder="MM" onchange="substract()">
-            <input id="years" type="text" id="firstNumber" value="" placeholder="YYYY" onchange="substract()">
 
+            <input type="number" id="days" placeholder="DD">
+            <input type="number" id="months" placeholder="MM">
+            <input type="number" id="years" placeholder="YYYY">
 
             <br><br>
-            <button class="btn" onclick="calculation()">Изчисли</button>
-            <div id="result"></div>
+            <button class="btn" onclick="calculate()">Изчисли</button>
+            <br><br>
+            <div id="result">Резултат</div>
             <br>
             <div class="d-flex justify-content-center">
                 <div id="demo1" class="float-left"></div>
