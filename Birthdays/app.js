@@ -18,7 +18,5 @@ function result() {
     let inputYear = Number(document.getElementById("years").value);
 
     document.getElementById("result").innerHTML = `През тази ${thisYear} година ще станете на: ${thisYear - inputYear} години.`;
-    // document.getElementById("result").innerHTML = `През тази `;
-    // document.getElementById("result").innerHTML = `През тази ${inputYear}`;
 
 }
