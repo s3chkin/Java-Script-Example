@@ -1,0 +1,64 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: rgb(247 247 247);
+}
+
+.formBody {
+    width: 450px;
+    background-color: #ffffff;
+    padding-top: 40px;
+}
+
+.icon1 {
+    padding-left: 35px;
+    background: url("./icons8-human-67.png") no-repeat left;
+    background-size: 20px;
+}
+
+.icon2 {
+    padding-left: 35px;
+    background: url("./icons8-password-50.png") no-repeat left;
+    background-size: 20px;
+}
+
+#imgSettings {
+    width: 600px;
+}
+
+.container {
+    margin-top: 85px;
+}
+
+#inputs {
+    width: 300px;
+    height: 40px;
+    border: 0;
+    border-bottom: 0.5px black;
+    border-top: 0;
+    border-style: inset;
+    margin-top: 20px;
+}
+
+.btn {
+    margin-top: 25px;
+    width: 130px;
+    height: 50px;
+    background-color: #6c63ff;
+    color: #ffffff;
+    font-size: 20px;
+}
+
+.socialMedias {
+    margin-top: 3px;
+    font-size: 17px;
+}
+
+.bi-facebook,
+.bi-google,
+.bi-github {
+    margin-left: 10px;
+    font-size: 20px;
+}
