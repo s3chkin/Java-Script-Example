@@ -146,7 +146,7 @@ function product9() {
 }
 
 function Remove() {
-    document.getElementById("product1").innerHTML = null;
+    // document.getElementById("product1").innerHTML = null;
     // document.getElementById("product2").innerHTML = null;
     // document.getElementById("product3").innerHTML = null;
     // document.getElementById("product4").innerHTML = null;
@@ -155,31 +155,6 @@ function Remove() {
     // document.getElementById("product7").innerHTML = null;
     // document.getElementById("product8").innerHTML = null;
     // document.getElementById("product9").innerHTML = null;
-
-}
-
-function add() {
-    if (product1 == null) {
-
-        var inputValue = document.getElementById("txtInput").value;
-        document.getElementById("product1").innerHTML = inputValue;
-
-        document.getElementById("txtInput").style.display = "none";
-        document.getElementById("btn1").style.display = "none";
-
-
-        document.getElementById("txtInput2").style.display = "block";
-        document.getElementById("btn2").style.display = "block";
-    } else {
-        var inputValue = document.getElementById("txtInput").value;
-        document.getElementById("product1").innerHTML = inputValue;
-
-        document.getElementById("txtInput").style.display = "none";
-        document.getElementById("btn1").style.display = "none";
-
-
-        document.getElementById("txtInput2").style.display = "block";
-        document.getElementById("btn2").style.display = "block";
-    }
+    window.location.reload();
 
 }
