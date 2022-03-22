@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css?family=Lobster');
+* {
+    font-family: 'Lobster', cursive;
+}
+
+body {
+    background: url("./background.avif") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.listBody {
+    padding-top: 20px;
+    margin-top: 50px;
+    width: 400px;
+    height: 600px;
+    background-color: rgba(255, 228, 155, 0.822);
+    display: grid;
+}
+
+
+/* h5 {
+    text-decoration: line-through;
+} */
+
+#txtInput,
+#txtInput2,
+#txtInput3,
+#txtInput4,
+#txtInput5,
+#txtInput6,
+#txtInput7,
+#txtInput8,
+#txtInput9,
+#txtInput10 {
+    height: 45px;
+    width: 275px;
+}
+
+
+/* #txtInput,
+#txtInput2:hover {
+    height: 45px;
+    width: 275px;
+} */
+
+.btn,
+#btn2,
+#btn3,
+#btn4,
+#btn5,
+#btn6,
+#btn7,
+#btn8,
+#btn9,
+#btn10 {
+    margin-left: 5px;
+    background-color: rgb(18, 145, 18);
+    color: aliceblue;
+    font-size: 20px;
+}
+
+.products {
+    font-size: 25px;
+}
+
+#txtInput2,
+#txtInput3,
+#txtInput4,
+#txtInput5,
+#txtInput6,
+#txtInput7,
+#txtInput8,
+#txtInput9,
+#txtInput10,
+#btn2,
+#btn3,
+#btn4,
+#btn5,
+#btn6,
+#btn7,
+#btn8,
+#btn9,
+#btn10 {
+    display: none;
+}
+
+.RemoveBtn {
+    background-color: rgb(18, 145, 18);
+    color: aliceblue;
+    font-size: 20px;
+    width: 85px;
+    height: 50px;
+    border-radius: 5px;
+    border: none;
+}
+
+.RemoveBtn:hover {
+    color: black;
+}
+
+.container2 {
+    /* padding-top: 20px; */
+    margin-top: 0;
+    width: 400px;
+    height: 70px;
+    background-color: rgba(255, 228, 155, 0.822);
+}
