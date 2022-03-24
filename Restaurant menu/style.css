@@ -3,5 +3,44 @@
 }
 
 body {
-    background-color: rgb(32, 40, 41);
+    background-color: rgb(255, 255, 255);
+}
+
+.nav {
+    display: grid;
+    width: 78px;
+    height: 40px;
+    color: #c59d5f;
+    border-color: #c59d5f;
+    border-width: 3px;
+    border-style: solid;
+    margin-left: 20px;
+    justify-items: center;
+    align-items: center;
+    cursor: pointer;
+    border-radius: 8px;
+}
+
+.nav:hover {
+    background-color: #c59d5f;
+    color: aliceblue;
+    border: none;
+}
+
+.img {
+    width: 224px;
+    border-color: #c59d5f;
+    border-width: 3px;
+    border-style: solid;
+    border-radius: 10px;
+    margin-right: 20px;
+}
+
+#productName {
+    margin: 0;
+    border-color: #c59d5f;
+    border-width: 3px;
+    border-bottom-style: dotted;
+    width: 225px;
+    font-size: 15px;
 }
