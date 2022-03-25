@@ -55,5 +55,10 @@ body {
 }
 
 #container2Lunch {
+    /* display: none; */
+}
+
+#DinnerSection,
+#ShakesSection {
     display: none;
 }
