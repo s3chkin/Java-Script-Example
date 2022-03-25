@@ -1,5 +1,6 @@
 * {
-    font-family: sans-serif;
+    font-family: 'Open Sans', sans-serif;
+    transition: ease-in-out 0.1s;
 }
 
 body {
@@ -12,7 +13,7 @@ body {
     height: 40px;
     color: #c59d5f;
     border-color: #c59d5f;
-    border-width: 3px;
+    border-width: 2px;
     border-style: solid;
     margin-left: 20px;
     justify-items: center;
@@ -27,13 +28,21 @@ body {
     border: none;
 }
 
-.img {
-    width: 224px;
+.content {
+    width: 228px;
+    height: 165px;
     border-color: #c59d5f;
     border-width: 3px;
     border-style: solid;
-    border-radius: 10px;
+    border-radius: 5px;
     margin-right: 20px;
+    margin-left: 5px;
+    margin-top: 3px;
+}
+
+.img {
+    width: 100%;
+    height: 100%;
 }
 
 #productName {
@@ -43,4 +52,8 @@ body {
     border-bottom-style: dotted;
     width: 225px;
     font-size: 15px;
+}
+
+#container2Lunch {
+    display: none;
 }

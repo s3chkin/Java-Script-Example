@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Res menu</title>
 
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
@@ -24,34 +24,46 @@
 
 <body>
     <br><br><br><br>
-    <div class="d-flex justify-content-center">
+    <div class="container" style="max-width: 1000px;">
 
-        <div id="menuContainer">
-            <div class="nav float-left" onclick="All()">All</div>
-            <div class="nav float-left" onclick="Breakfast()">Breakfast</div>
-            <div class="nav float-left" onclick="Lunch()">Lunch</div>
-            <div class="nav float-left" onclick="Shakes()">Shakes</div>
-            <div class="nav float-left" onclick="Dinner()">Dinner</div>
+        <div class="d-flex justify-content-center">
 
-            <br><br><br><br><br>
-            <div id="breakfastSection">
+            <div id="menuContainer">
+                <div class="nav float-left" onclick="All()">All</div>
+                <div class="nav float-left" onclick="Breakfast()">Breakfast</div>
+                <div class="nav float-left" onclick="Lunch()">Lunch</div>
+                <div class="nav float-left" onclick="Shakes()">Shakes</div>
+                <div class="nav float-left" onclick="Dinner()">Dinner</div>
+            </div>
+        </div>
+        <br><br><br>
+
+        <!---------------- Brekfast ----------------->
+        <div id="BreakfastsWindow">
+
+            <div id="breakfastSection" class="d-flex justify-content-center">
 
                 <div id="breakfasts">
-                    <div class="float-left">
-                        <img src="./b1.jpg" alt="" class="img float-left">
+
+                    <div class="float-left" style="display: flex;">
+                        <div class="content">
+                            <img src="./b1.jpg" alt="" class="img">
+                        </div>
                         <div class="float-left">
                             <p id="productName">
                                 Cheese paratha
                             </p>
-                            <p class="float-left" style="font-size: 15px;">
+                            <p class="float-left" style="font-size: 0.9rem; margin-top: 8px;">
                                 These cheese flatbreads make for<br> a wholesome breakfast or brunch. <br> There are many many varieties <br> of paratha made and this is <br> one such tasty paratha which the <br> kids are going to love.
                             </p>
                         </div>
                     </div>
 
 
-                    <div class="float-left" style="margin-left: 50px;">
-                        <img src="./b2.jpg" alt="" class="img float-left">
+                    <div class="float-right" style="display: flex; margin-left: 15px;">
+                        <div class="content">
+                            <img src="./b2.jpg" alt="" class="img">
+                        </div>
                         <div class="float-left">
                             <div>
                                 <p id="productName">
@@ -59,10 +71,171 @@
                                 </p>
                                 <p></p>
                             </div>
-                            <p class="float-left" style="font-size: 15px;">
+                            <p class="float-left" style="font-size: 0.9rem;">
                                 Aloo Paratha is a bread dish <br> originating from the Indian <br> subcontinent. It is a breakfast <br> dish originated from the <br> Punjab region.
                             </p>
                         </div>
+                    </div>
+
+
+                </div>
+            </div>
+            <br><br>
+            <div id="breakfastSection">
+
+                <div class="float-left" style="display: flex; margin-left: 0px;">
+                    <div class="content">
+                        <img src="./b3.jpg" alt="" class="img">
+                    </div>
+                    <div class="float-left">
+                        <div>
+                            <p id="productName">
+                                Egg Paratha
+                            </p>
+                            <p></p>
+                        </div>
+                        <p class="float-left" style="font-size: 0.9rem;">
+                            Egg paratha recipe — easy breakfast, <br> brunch or dinner recipe that is <br> protein rich, healthy and tasty. <br> Egg paratha is a kids' favorite, so i <br> make it often for their <br> after school snack.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+
+        <!---------------- Lunch ----------------->
+        <!-- <div id="LunchWindow">
+
+            <div id="LunchSection" class="d-flex justify-content-center">
+
+                <div id="Lunch">
+
+                    <div class="float-left" style="display: flex;">
+                        <div class="content">
+                            <img src="./b1.jpg" alt="" class="img">
+                        </div>
+                        <div class="float-left">
+                            <p id="productName">
+                                Cheese paratha
+                            </p>
+                            <p class="float-left" style="font-size: 0.9rem; margin-top: 8px;">
+                                These cheese flatbreads make for<br> a wholesome breakfast or brunch. <br> There are many many varieties <br> of paratha made and this is <br> one such tasty paratha which the <br> kids are going to love.
+                            </p>
+                        </div>
+                    </div>
+
+
+                    <div class="float-right" style="display: flex; margin-left: 15px;">
+                        <div class="content">
+                            <img src="./b2.jpg" alt="" class="img">
+                        </div>
+                        <div class="float-left">
+                            <div>
+                                <p id="productName">
+                                    Aloo Paratha
+                                </p>
+                                <p></p>
+                            </div>
+                            <p class="float-left" style="font-size: 0.9rem;">
+                                Aloo Paratha is a bread dish <br> originating from the Indian <br> subcontinent. It is a breakfast <br> dish originated from the <br> Punjab region.
+                            </p>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+            <br><br>
+            <div id="breakfastSection">
+
+                <div class="float-left" style="display: flex; margin-left: 0px;">
+                    <div class="content">
+                        <img src="./b2.jpg" alt="" class="img">
+                    </div>
+                    <div class="float-left">
+                        <div>
+                            <p id="productName">
+                                Egg Paratha
+                            </p>
+                            <p></p>
+                        </div>
+                        <p class="float-left" style="font-size: 0.9rem;">
+                            Egg paratha recipe — easy breakfast, <br> brunch or dinner recipe that is <br> protein rich, healthy and tasty. <br> Egg paratha is a kids' favorite, so i <br> make it often for their <br> after school snack.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div> -->
+    </div>
+
+
+
+
+
+    <div id="container2Lunch" class="container" style="max-width: 1000px;">
+        <!---------------- Lunch ----------------->
+        <div id="LunchWindow">
+
+            <div id="LunchSection" class="d-flex justify-content-center">
+
+                <div id="Lunch">
+
+                    <div class="float-left" style="display: flex;">
+                        <div class="content">
+                            <img src="./b1.jpg" alt="" class="img">
+                        </div>
+                        <div class="float-left">
+                            <p id="productName">
+                                Cheese paratha
+                            </p>
+                            <p class="float-left" style="font-size: 0.9rem; margin-top: 8px;">
+                                These cheese flatbreads make for<br> a wholesome breakfast or brunch. <br> There are many many varieties <br> of paratha made and this is <br> one such tasty paratha which the <br> kids are going to love.
+                            </p>
+                        </div>
+                    </div>
+
+
+                    <div class="float-right" style="display: flex; margin-left: 15px;">
+                        <div class="content">
+                            <img src="./b2.jpg" alt="" class="img">
+                        </div>
+                        <div class="float-left">
+                            <div>
+                                <p id="productName">
+                                    Aloo Paratha
+                                </p>
+                                <p></p>
+                            </div>
+                            <p class="float-left" style="font-size: 0.9rem;">
+                                Aloo Paratha is a bread dish <br> originating from the Indian <br> subcontinent. It is a breakfast <br> dish originated from the <br> Punjab region.
+                            </p>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+            <br><br>
+            <div id="breakfastSection">
+
+                <div class="float-left" style="display: flex; margin-left: 0px;">
+                    <div class="content">
+                        <img src="./b2.jpg" alt="" class="img">
+                    </div>
+                    <div class="float-left">
+                        <div>
+                            <p id="productName">
+                                Egg Paratha
+                            </p>
+                            <p></p>
+                        </div>
+                        <p class="float-left" style="font-size: 0.9rem;">
+                            Egg paratha recipe — easy breakfast, <br> brunch or dinner recipe that is <br> protein rich, healthy and tasty. <br> Egg paratha is a kids' favorite, so i <br> make it often for their <br> after school snack.
+                        </p>
                     </div>
                 </div>
             </div>
