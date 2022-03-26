@@ -23,17 +23,19 @@
 </head>
 
 <body>
-    <br><br><br><br>
+    <br><br>
     <div class="container" style="max-width: 1000px;">
 
-        <div class="d-flex justify-content-center">
+        <h2 class="d-flex justify-content-center"><b>Our Menu</b> </h2>
+        <br><br>
 
+        <div class="d-flex justify-content-center">
             <div id="menuContainer">
-                <div class="nav float-left" onclick="All()">All</div>
-                <div class="nav float-left" onclick="Breakfast()">Breakfast</div>
-                <div class="nav float-left" onclick="Lunch()">Lunch</div>
-                <div class="nav float-left" onclick="Shakes()">Shakes</div>
-                <div class="nav float-left" onclick="Dinner()">Dinner</div>
+                <div class="nav float-left" id="all" onclick="All()">All</div>
+                <div class="nav float-left" id="breakfast" onclick="Breakfast()">Breakfast</div>
+                <div class="nav float-left" id="lunch" onclick="Lunch()">Lunch</div>
+                <div class="nav float-left" id="shakes" onclick="Shakes()">Shakes</div>
+                <div class="nav float-left" id="dinner" onclick="Dinner()">Dinner</div>
             </div>
         </div>
         <br><br><br>
@@ -85,7 +87,7 @@
 
                 <div class="float-left" style="display: flex; margin-left: 0px;">
                     <div class="content">
-                        <img src="./b2.jpg" alt="" class="img">
+                        <img src="./b3.jpg" alt="" class="img">
                     </div>
                     <div class="float-left">
                         <div>
@@ -100,28 +102,34 @@
                     </div>
                 </div>
             </div>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
         </div>
 
 
 
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
 
 
-        <!---------------- Lunch ----------------->
-        <div id="LunchWindow">
 
-            <div id="LunchSection" class="d-flex justify-content-center">
+    </div>
+
+
+    <!---------------- Lunch ----------------->
+    <div class="d-flex justify-content-center">
+
+        <div id="LunchWindow" style="max-width: 1000px;">
+
+            <div id="LunchSection">
 
                 <div id="Lunch">
 
@@ -155,14 +163,16 @@
                             <p class="float-left" style="font-size: 0.9rem;">
                                 Palak Paneer is a popular Indian <br> dish of Indian cottage cheese <br> cubes in a mild, spiced smooth <br> spinach sauce. This delicious <br> creamy dish is made with <br> fresh spinach leaves...
                             </p>
+                            <br><br><br><br>
+
                         </div>
                     </div>
 
 
                 </div>
             </div>
-            <br><br>
             <div id="breakfastSection">
+                <br><br><br><br>
 
                 <div class="float-left" style="display: flex;">
                     <div class="content">
@@ -194,70 +204,63 @@
                         <p class="float-left" style="font-size: 0.9rem;">
                             Aloo Gosht is a spicy, thick <br> and creamy meat gravy that <br> originates from Pakistani and <br> North Indian cuisine.This gravy <br> has potatoes cooked with lamb <br> or mutton in a thick stew.
                         </p>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
                     </div>
                 </div>
             </div>
         </div>
-
-
-
-
-
-
-
-
-
     </div>
 
     <!---------------- Shakes ----------------->
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <div id="ShakesSection" class="d-flex justify-content-center">
+    <div class="d-flex justify-content-center">
 
-        <div id="Shake">
+        <div id="ShakesSection" style="max-width: 1000px;">
 
-            <div class="float-left" style="display: flex;">
-                <div class="content">
-                    <img src="./shakes/s1.jpg" class="img ">
-                </div>
-                <div class="float-left ">
-                    <p id="productName ">
-                        Banana Shakes
-                    </p>
-                    <p class="float-left " style="font-size: 0.9rem; margin-top: 8px; ">
-                        You need less than five <br> minutes to make this easy <br> banana smoothie. Use our simple <br> recipe on it’s own or use it <br> as a base for other smoothies.
-                    </p>
-                </div>
-            </div>
+            <div id="Shake">
 
-
-            <div class="float-right " style="display: flex; margin-left: 15px; ">
-                <div class="content ">
-                    <img src="./shakes/s2.jpg" class="img ">
-                </div>
-                <div class="float-left ">
-                    <div>
-                        <p id="productName ">
-                            Mango Shakes
-                        </p>
-                        <p></p>
+                <div class="float-left" style="display: flex;">
+                    <div class="content">
+                        <img src="./shakes/s1.jpg" class="img ">
                     </div>
-                    <p class="float-left " style="font-size: 0.9rem; ">
-                        Mango shake is a cool and tempting <br> fruit drink prepared by simply <br> blending ripe mango pieces, milk and <br> sugar. To keep things simple <br> and easy, this recipe primarily <br> explains how to make mango...
+                    <div class="float-left ">
+                        <p id="productName ">
+                            Banana Shakes
+                        </p>
+                        <p class="float-left " style="font-size: 0.9rem; margin-top: 8px; ">
+                            You need less than five <br> minutes to make this easy <br> banana smoothie. Use our simple <br> recipe on it’s own or use it <br> as a base for other smoothies.
+                        </p>
+                    </div>
                 </div>
 
+
+                <div class="float-right " style="display: flex; margin-left: 15px; ">
+                    <div class="content ">
+                        <img src="./shakes/s2.jpg" class="img ">
+                    </div>
+                    <div class="float-left ">
+                        <div>
+                            <p id="productName ">
+                                Mango Shakes
+                            </p>
+                            <p></p>
+                        </div>
+                        <p class="float-left " style="font-size: 0.9rem; ">
+                            Mango shake is a cool and tempting <br> fruit drink prepared by simply <br> blending ripe mango pieces, milk and <br> sugar. To keep things simple <br> and easy, this recipe primarily <br> explains how to make mango...
+                    </div>
+
+                </div>
 
             </div>
         </div>
-        <br><br>
 
     </div>
 
@@ -265,40 +268,39 @@
 
 
 
-    <div id="DinnerSection">
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <div class="float-left" style="display: flex;">
-            <div class="content">
-                <img src="./Dinner/d1.jpg" alt="" class="img">
-            </div>
-            <div class="float-left">
-                <p id="productName">
-                    Biryani
-                </p>
-                <p class="float-left" style="font-size: 0.9rem; margin-top: 8px;">
-                    Biryani is a mixed rice dish <br> originating among the Muslims <br> of the Indian subcontinent. It <br> is made with Indian spices, <br> rice, and meat, and sometimes, <br> in addition, eggs...
-                </p>
-            </div>
-        </div>
+    <div class="d-flex justify-content-center">
 
+        <div id="DinnerSection" style="max-width: 1000px;">
 
-        <div class="float-right" style="display: flex; margin-left: 15px;">
-            <div class="content">
-                <img src="./Dinner/d2.jpg" alt="" class="img">
-            </div>
-            <div class="float-left">
-                <div>
+            <div class="float-left" style="display: flex;">
+                <div class="content">
+                    <img src="./Dinner/d1.jpg" alt="" class="img">
+                </div>
+                <div class="float-left">
                     <p id="productName">
-                        Korma
+                        Biryani
+                    </p>
+                    <p class="float-left" style="font-size: 0.9rem; margin-top: 8px;">
+                        Biryani is a mixed rice dish <br> originating among the Muslims <br> of the Indian subcontinent. It <br> is made with Indian spices, <br> rice, and meat, and sometimes, <br> in addition, eggs...
                     </p>
                 </div>
-                <p class="float-left" style="font-size: 0.9rem; margin-top: 4px;">
-                    Korma is a gravy dish that is <br> usually made with yogurt, lots <br> of nuts and spices. A Mughal <br> era original, Chicken Korma <br> is the perfect dinner party <br> dish that is easy, quick <br> and a no fuss recipe.
-                </p>
+            </div>
+
+
+            <div class="float-right" style="display: flex; margin-left: 15px;">
+                <div class="content">
+                    <img src="./Dinner/d2.jpg" alt="" class="img">
+                </div>
+                <div class="float-left">
+                    <div>
+                        <p id="productName">
+                            Korma
+                        </p>
+                    </div>
+                    <p class="float-left" style="font-size: 0.9rem; margin-top: 4px;">
+                        Korma is a gravy dish that is <br> usually made with yogurt, lots <br> of nuts and spices. A Mughal <br> era original, Chicken Korma <br> is the perfect dinner party <br> dish that is easy, quick <br> and a no fuss recipe.
+                    </p>
+                </div>
             </div>
         </div>
     </div>

@@ -59,6 +59,8 @@ body {
 }
 
 #DinnerSection,
-#ShakesSection {
+#ShakesSection,
+#LunchWindow,
+#BreakfastsWindow {
     display: none;
 }
