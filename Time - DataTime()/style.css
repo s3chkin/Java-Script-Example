@@ -1,0 +1,51 @@
+body {
+    background-color: rgb(134, 134, 134);
+}
+
+.title {
+    color: aliceblue;
+    font-family: Bebas Neue, cursive;
+}
+
+.container {
+    width: 650px;
+    height: 500px;
+    background-color: black;
+}
+
+.hours {
+    margin-top: 50px;
+    margin-bottom: 25px;
+    width: 100px;
+    height: 50px;
+    background-color: white;
+    font-size: 35px;
+    align-items: center;
+    font-family: 'Orbitron', sans-serif;
+    border-radius: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
+    text-align: center;
+}
+
+#days {
+    margin-top: 50px;
+    margin-bottom: 25px;
+    width: 450px;
+    height: 50px;
+    background-color: white;
+    font-size: 35px;
+    align-items: center;
+    border-radius: 10px;
+}
+
+#date {
+    margin-top: 50px;
+    margin-bottom: 25px;
+    width: 450px;
+    height: 50px;
+    background-color: white;
+    font-size: 35px;
+    align-items: center;
+    border-radius: 10px;
+}
