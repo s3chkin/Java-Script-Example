@@ -12,6 +12,6 @@ function Decrease() {
 }
 
 function Reset() {
-    document.getElementById("counter").innerHTML = 0;
+    location.reload();
 
 }

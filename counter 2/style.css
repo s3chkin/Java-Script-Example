@@ -1,28 +1,37 @@
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: rgb(255, 191, 95);
+    background-color: #13162b;
 }
 
 h2 {
     font-size: 45px;
+    color: white;
 }
 
 #counter {
-    font-size: 35px;
-    color: rgb(24, 134, 74);
+    font-size: 40px;
+    color: rgb(255, 255, 255);
 }
 
 .container {
-    background-color: antiquewhite;
-    border-radius: 10px;
+    border-bottom: #0083f8;
+    border-top: #0083f8;
+    border-left: #13162b;
+    border-right: #13162b;
+    border-style: solid;
+    border-width: 20px;
+    background-color: #191c37;
+    /* border-radius: 10px; */
     width: 400px;
     padding-bottom: 25px;
 }
 
 button {
-    font-size: 20px;
-    background-color: antiquewhite;
-    border-radius: 6px;
+    width: 60px;
+    height: 50px;
+    font-size: 30px;
+    background-color: #0083f8;
     margin-left: 10px;
     cursor: pointer;
+    color: aliceblue;
 }
